@@ -10,5 +10,5 @@ D=e=>e.map((v,y)=>e.map((n,x)=>x>9||c.fillRect(x*32,y*32,30,30,c.fillStyle=v>>x&
 M=(p,x,y)=>p.map((v,i)=>i%2?+v+y:+v+x)
 U=i=>{for(i=18;i--;)B[i]-1023||B.splice(i,1)&B.unshift(0)}
 (_=e=>{A(p=M(P,0,1))?(A(P),B=b,U(),D(B),R()):(P=p,D(b)),setTimeout(_,T)})()
-onkeydown=e=>(k=e.keyCode-38)-2?k-1&&~k?k||(p=P.map((v,i)=>i%2?-P[i-1]+P[2]+P[3]:P[i+1]+P[2]-P[3]),A(p)||(P=p)):(p=M(P,k,0),A(p)||(P=p)):T=20
+onkeydown=e=>(k=e.keyCode-38)-2?k-1&&~k?k?0:A(p=P.map((v,i)=>i%2?-P[i-1]+P[2]+P[3]:P[i+1]+P[2]-P[3]))?0:P=p:A(p=M(P,k,0))?0:P=p:T=20
 </script>
