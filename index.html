@@ -1,0 +1,26 @@
+<canvas id=a></canvas>
+<script>
+c=a.getContext('2d')
+a.height=a.width=600
+B=[...Array(18)].map(i=>0)
+R=e=>{P=[...'716160504030312120'.substr(new Date%6*2,8)].map(i=>+i),T=200}
+R()
+A=p=>(
+H=0,b=[...B],
+p.map((v,i)=>{i%2||(H|=v<0||v>9||p[i+1]<0||p[i+1]>17||b[p[i+1]]>>v&1),b[p[i+1]]|=i%2?0:1<<v}),
+b
+)
+D=e=>e.map((v,y)=>e.map((n,x)=>x>9||c.fillRect(x*32,y*32,30,30,c.fillStyle=v>>x&1?'#000':'#eee')))
+M=(p,x,y)=>p.map((v,i)=>i%2?+v+y:+v+x)
+U=i=>{for(i=18;i--;)B[i]-1023||B.splice(i,1)&B.unshift(0)}
+(_=e=>{
+p=M(P,0,1)
+b=A(p)
+H?(B=A(P),U(),D(B),R()):(P=p,D(b))
+setTimeout(_,T)
+})()
+onkeydown=e=>{
+(k=e.keyCode-38)||(p=P.map((v,i)=>i%2?-P[i-1]+P[2]+P[3]:P[i+1]+P[2]-P[3]),A(p),H||(P=p))
+k-1&&k+1||(p=M(P,k,0),A(p),H||(P=p))
+k-2||(T=20)
+}</script>
