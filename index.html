@@ -1,7 +1,7 @@
 <body id=Z>
 <script>
 R=e=>{P=[...'716160504030312120'.substr(new Date%6*2,8)].map(i=>+i),T=200}
-R(B=[...Array(18)].map(i=>S=0))
+R(B=Array(18).fill(S=0))
 A=p=>(H=0,b=[...B],p.map((v,i)=>{i%2||(H|=v<0||v>9||p[i+1]<0||p[i+1]>17||b[p[i+1]]>>v&1),b[p[i+1]]|=i%2?0:1<<v}),H)
 D=e=>($='',e.map((v,y)=>(e.map((n,x)=>x>9||($+=`<input type=radio ${v>>x&1?'checked':''}>`),$+='<br>'))),Z.innerHTML=$+S)
 M=(p,x,y)=>p.map((v,i)=>i%2?+v+y:+v+x)
