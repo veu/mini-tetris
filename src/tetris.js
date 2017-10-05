@@ -3,7 +3,7 @@ R=e=>E=A(P=[...'716160504030312120'.substr(new Date%6*2,8)].map(i=>+i,T=200)),
 R(B=Array(18).fill(S=E=0)),
 D=e=>(
     $=S,
-    e.map(v=>e.map((n,x)=>x>9?0:$+='_#'[v>>x&1],$+='<br>')),
+    e.map(v=>e.map((n,x)=>x>9?0:$+='□■'[v>>x&1],$+='<br>')),
     Z.innerHTML=$
 ),
 (_=e=>{
