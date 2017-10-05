@@ -1,16 +1,16 @@
 A=p=>p.map((x,i)=>i%2?0:b[y=p[i+1],H|=x<0|x>9|y<0|y>17||b[y]>>x&1,y]|=1<<x,H=0,b=[...B])&&H,
-R=e=>E=A(P=[...'716160504030312120'.substr(new Date%6*2,8)].map(i=>+i,T=200)),
-R(B=Array(18).fill(S=E=0)),
+R=e=>A(P=[...'716160504030312120'.substr(new Date%6*2,8)].map(i=>+i,T=200)),
+R(B=Array(18).fill(S=0)),
 D=e=>(
     $=S,
     e.map(v=>e.map((n,x)=>x>9?0:$+='□■'[v>>x&1],$+='<br>')),
     Z.innerHTML=$
 ),
 (_=e=>{
-    A(p=P.map((v,i)=>i%2?v+1:v))
+    (A(p=P.map((v,i)=>i%2?v+1:v))
         ?R(A(P),D(B=[s=0,0,0,0].concat(b).filter(v=>v-1023||!(S+=++s)).slice(-18)))
-        :D(b,P=p),
-    E||setTimeout(_,T)
+        :!D(b,P=p)
+    )||setTimeout(_,T)
 })(),
 onkeydown=e=>
 (k=e.keyCode-38)-2
