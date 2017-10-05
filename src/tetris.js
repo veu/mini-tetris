@@ -16,13 +16,10 @@ D=e=>(
 })(),
 onkeydown=e=>
 (k=e.keyCode-38)-2
-    ?k-1&&~k
-        ?k
-            ?0
-            :A(p=P.map((v,i)=>i%2?P[2]-P[i-1]+P[3]:P[2]+P[i+1]-P[3]))
-                ?0
-                :P=p
+    ?(k-1&&~k
+        ?k||A(p=P.map((v,i)=>i%2?P[2]-P[i-1]+P[3]:P[2]+P[i+1]-P[3]))
         :A(p=P.map((v,i)=>i%2?v:v+k))
-            ?0
-            :P=p
+    )
+        ?0
+        :P=p
     :T=20
