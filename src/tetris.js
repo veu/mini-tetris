@@ -6,12 +6,12 @@ D=e=>(
     e.map(v=>e.map((n,x)=>x>9?0:$+='□■'[v>>x&1],$+='<br>')),
     Z.innerHTML=$
 ),
-(_=e=>{
+(_=e=>
     (A(P.map((v,i)=>v+i%2))
         ?R(A(P),D(B=[s=0,0,0,0].concat(b).filter(v=>v-1023||!(S+=++s)).slice(-18)))
         :!D(b,P=p)
     )||setTimeout(_,T)
-})(
+)(
 onkeydown=e=>
     (k=e.keyCode-38)-2
         ?(k-1&&~k
