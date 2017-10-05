@@ -8,7 +8,7 @@ D=e=>(
 ),
 (_=e=>
     (A(P.map((v,i)=>v+i%2))
-        ?R(A(P),D(B=[s=0,0,0,0].concat(b).filter(v=>v-1023||!(S+=++s)).slice(-18)))
+        ?R(A(P),D(B=[s=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18)))
         :!D(b,P=p)
     )||setTimeout(_,k-2?200:20)
 )(
