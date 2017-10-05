@@ -1,0 +1,10 @@
+{
+  "name": "mini-tetris",
+  "author": "Rebecca & the code golf team",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.6.1",
+    "gulp-size": "^2.1.0"
+  }
+}
