@@ -1,5 +1,5 @@
 A=e=>e.map((x,i)=>i%2?0:b[y=e[i+1],H|=x<0|x>9|y<0|y>17||b[y]>>x&1,y]|=1<<x,p=e,H=0,b=[...B])&&H,
-R=e=>A(P=[...'716160504030312120'.substr(new Date%6*2,8)].map(i=>+i,T=200)),
+R=e=>A(P=[...'716160504030312120'.substr(new Date%6*2,8)].map(eval),T=200),
 R(B=Array(18).fill(S=0)),
 D=e=>(
     $=S,
