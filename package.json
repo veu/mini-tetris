@@ -1,6 +1,6 @@
 {
   "name": "mini-tetris",
-  "author": "Rebecca & the code golf team",
+  "author": "Rebecca & the JS codegolf team",
   "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.1",
