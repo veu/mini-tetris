@@ -7,7 +7,7 @@ D=e=>(
     Z.innerHTML=$
 ),
 (_=e=>{
-    (A(P.map((v,i)=>i%2?v+1:v))
+    (A(P.map((v,i)=>v+i%2))
         ?R(A(P),D(B=[s=0,0,0,0].concat(b).filter(v=>v-1023||!(S+=++s)).slice(-18)))
         :!D(b,P=p)
     )||setTimeout(_,T)
