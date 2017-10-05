@@ -1,3 +1,4 @@
+const bom = require('gulp-bom');
 const fs = require('fs');
 const gulp = require('gulp');
 const replace = require('gulp-replace');
@@ -13,6 +14,7 @@ gulp.task('compile', function () {
   return gulp.src('src/tetris.html')
     .pipe(replace(/\s*\n\s*/g, ''))
     .pipe(replace(/<demo>/, jsCompiled))
+    .pipe(bom())
     .pipe(size({pretty: false, showFiles: true}))
     .pipe(gulp.dest('dist'));
 });
