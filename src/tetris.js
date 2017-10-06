@@ -18,7 +18,7 @@ D=e=>(
     Z.innerHTML=$
 ),
 (_=e=>
-    A(P=P||[...'716160504030312120'.substr(new Date%6*2,k=8)].map(eval))
+    A(P=P||[...'716160504030312120'.substr(Date%6*2,k=8)].map(eval))
     ||setTimeout(_,k-2?200:20,
         A(P.map((v,i)=>v+i%2))
             ?A(P)&D(B=[s=P=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18))
@@ -26,7 +26,7 @@ D=e=>(
     )
 )(
 onkeydown=e=>
-    P?((k=e.keyCode-38)-1&&~k
+    P?((k=e.which-38)-1&&~k
         ?k||A(P.map((v,i)=>P[2]+(q=i%2*2-1)*(P[3]-P[i-q])))
         :A(P.map((v,i)=>v-~i%2*k))
     )
