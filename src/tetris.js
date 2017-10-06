@@ -1,4 +1,14 @@
-A=e=>e.map((x,i)=>i%2?0:b[H|=x<0|x>9|b[y=e[i+1]]>>x&1|y>17,y]|=1<<x,p=e,H=0,b=[...B])&&H,
+// A(piece) – Copy piece to p and merge field B and piece into field b.
+//            Return true if piece overlapped with B
+// D(field) – Draw field
+
+// B – Current state of playing field, format: [c00<<0|c01<<1|…, c10<<0|c11<<1|…, …]
+// b - Updated state of playing field
+// P – Current piece, format: [x0, y0, x1, y1, …]
+// p – Updated piece
+// k – Last key code pressed (- 38)
+
+A=e=>e.map((x,i)=>i%2?0:b[h|=x<0|x>9|b[y=e[i+1]]>>x&1|y>17,y]|=1<<x,p=e,h=0,b=[...B])&&h,
 B=Array(18).fill(S=P=0),
 D=e=>(
     $=S,
