@@ -1,3 +1,4 @@
+// _() – Main loop
 // A(piece) – Copy piece to p and merge field B and piece into field b.
 //            Return true if piece overlapped with B
 // D() – Draw updated field b
@@ -9,13 +10,14 @@
 // k – Last key code pressed (- 38)
 // S - Total score
 // s – Tally of current move used to reward clearing multiple lines
+// I - Offset of next piece
 
 A=e=>e[M]((x,i)=>i%2?0:b[h|=x<0|x>9|b[y=e[i+1]]>>x&1|y>17,y]|=1<<x,p=e,h=0,b=[...B])&&h,
-B=Array(18).fill(S=P=0),
+B=Array(18).fill(S=P=I=0),
 D=e=>b[M](v=>b[M]((n,x)=>x>9?0:Z.innerText=$+='□■'[v>>x&1],$+='\n'),$=S),
 (_=e=>
-    A(P=P||[...'716160504030312120'.substr(new Date%6*2,k=8)][M='map'](eval))
-    ||setTimeout(_,k-2?200:20,
+    A(P=P||[...'202131304050606171'.substr(I%6*2,k=8)][M='map'](eval))
+    ?0:I=setTimeout(_,k-2?200:20,
         A(P[M]((v,i)=>v+i%2))
             ?A(P)&D(B=[s=P=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18))
             :D(P=p)
