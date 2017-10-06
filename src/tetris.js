@@ -1,6 +1,6 @@
 // A(piece) – Copy piece to p and merge field B and piece into field b.
 //            Return true if piece overlapped with B
-// D(field) – Draw field
+// D() – Draw updated field b
 
 // B – Current state of playing field, format: [c00<<0|c01<<1|…, c10<<0|c11<<1|…, …]
 // b - Updated state of playing field
