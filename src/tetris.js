@@ -14,9 +14,9 @@ D=e=>(
     )
 )(
 onkeydown=e=>
-    ((k=e.keyCode-38)-1&&~k
+    P?((k=e.keyCode-38)-1&&~k
         ?k||A(P.map((v,i)=>P[2]+(q=i%2*2-1)*(P[3]-P[i-q])))
         :A(P.map((v,i)=>v-~i%2*k))
     )
-    ||D(P=p)
+    ||D(P=p):0
 )
