@@ -12,7 +12,7 @@
 
 A=e=>e[M]((x,i)=>i%2?0:b[h|=x<0|x>9|b[y=e[i+1]]>>x&1|y>17,y]|=1<<x,p=e,h=0,b=[...B])&&h,
 B=Array(18).fill(S=P=0),
-D=e=>b[M](v=>b[M]((n,x)=>x>9?0:Z.innerHTML=$+='□■'[v>>x&1],$+='<br>'),$=S),
+D=e=>b[M](v=>b[M]((n,x)=>x>9?0:Z.innerText=$+='□■'[v>>x&1],$+='\n'),$=S),
 (_=e=>
     A(P=P||[...'716160504030312120'.substr(new Date%6*2,k=8)][M='map'](eval))
     ||setTimeout(_,k-2?200:20,
