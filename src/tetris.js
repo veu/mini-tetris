@@ -7,6 +7,8 @@
 // P – Current piece, format: [x0, y0, x1, y1, …]
 // p – Updated piece
 // k – Last key code pressed (- 38)
+// S - Total score
+// s – Tally of current move used to reward clearing multiple lines
 
 A=e=>e.map((x,i)=>i%2?0:b[h|=x<0|x>9|b[y=e[i+1]]>>x&1|y>17,y]|=1<<x,p=e,h=0,b=[...B])&&h,
 B=Array(18).fill(S=P=0),
