@@ -1,5 +1,5 @@
 // _() – Main loop
-// D() – Draw updated field b and assign P to p.
+// D() – Draw updated field b and set P=p.
 // M(code) – Map P to p using code and merge it with field B into field b.
 //           Return true if piece overlaps with B.
 
