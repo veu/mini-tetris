@@ -18,7 +18,7 @@ B=[...Q='202131304050606171'].fill(S=P=I=0),
 D=e=>b.map(v=>b.map((n,x)=>x>9?0:Z.innerText=$+='□■'[v>>x&1],$+='\n'),$=S),
 (_=e=>
     (P=P||[...Q.substr(I%6*2,k=8)],M`v`)
-    ?0:I=setTimeout(_,k-2?200:20,
+    ?0:I=setTimeout(_,k-2&&200,
         M`+v+i%2`
             ?M`v`&D(B=[s=P=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18))
             :D(P=p)
