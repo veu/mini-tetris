@@ -19,9 +19,7 @@ D=e=>b.map(v=>b.map((n,x)=>x>9?0:Z.innerText=$+='□■'[v>>x&1],$+='\n'),$=S,P=
 (_=e=>
     (P=P||[...Q.substr(I%6*2,k=8)],M`v`)
     ?0:I=setTimeout(_,k-2&&200,
-        M`+v+i%2`
-            ?M`v`&D(B=[s=p=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18))
-            :D()
+        D(M`+v+i%2`&&M`v`&(B=[s=p=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18)))
     )
 )(
 onkeydown=e=>
