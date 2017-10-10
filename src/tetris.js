@@ -15,7 +15,8 @@
 
 M=e=>(p=P.map((v,i)=>eval(e[0]),b=[...B])).some((x,i)=>i%2?0:(b[h=x<0|x>9|b[y=p[i+1]]>>x&1|y>17,y]|=1<<x,h)),
 B=[...Q='202131304050606171'].fill(S=P=k=0),
-D=e=>b.map(v=>{$+='\n';for(x=10;x--;)Z.innerText=$+='□■'[v>>x&1]},$=S,P=p),
+D=e=>b.map(v=>{$+=`
+`;for(x=10;x--;)Z.innerText=$+='□■'[v>>x&1]},$=S,P=p),
 (_=e=>D(
     I=setTimeout(_,k-2&&200),
     P=P||[...Q.substr(I%6*2,k=8)],

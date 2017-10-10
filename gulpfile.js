@@ -10,7 +10,7 @@ gulp.task('default', ['compile'], function () {
 
 gulp.task('compile', function () {
   const js = fs.readFileSync('src/tetris.js', 'utf8');
-  const jsCompiled = js.trim().replace(/(?:\/\/[^\n]*)?\s*\n\s*/g, '');
+  const jsCompiled = js.trim().replace(/(?:\/\/[^\n]*)?\s*\n\s*(?!`)/g, '');
   return gulp.src('src/tetris.html')
     .pipe(replace(/\s*\n\s*/g, ''))
     .pipe(replace(/<demo>/, jsCompiled))
