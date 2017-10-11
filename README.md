@@ -1,6 +1,6 @@
 # Mini Tetris
 
-A JavaScript Tetris clone in 508b.
+A JavaScript Tetris clone in 512b.
 
 [Play the game](https://veu.github.io/mini-tetris/dist/tetris.html).
 
@@ -10,6 +10,11 @@ A JavaScript Tetris clone in 508b.
 * Move, turn, and speed up pieces with arrow keys
 * Score with bonus for multiple lines
 * Beautiful UI ;)
+
+## Caveats
+
+* First piece is always a square.
+* Pieces turn differently than in original version.
 
 ## Contributors
 
