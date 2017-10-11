@@ -13,7 +13,7 @@
 // s – Tally of current move used to reward clearing multiple lines
 // I - Offset of next piece
 
-M=e=>(p=P.map((v,i)=>eval(e[0]),b=[...B])).some((x,i)=>i%2&&(b[h=x<0|x>9|b[y=p[i-1]]>>x&1|y>17,y]|=1<<x,h)),
+M=e=>(h=0,p=P.map((v,i)=>(x=eval(e[0]),i%2?b[h|=x<0|x>9|b[y]>>x&1|y>17,y]|=1<<x:0,y=x),b=[...B]),h),
 B=[...Q='021213030405061617'].fill(S=P=k=0),
 D=e=>b.map(v=>{$+=`
 `;for(x=10;x--;)Z.innerText=$+='□■'[v>>x&1]},$=S,P=p),
