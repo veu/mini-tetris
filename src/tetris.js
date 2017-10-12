@@ -11,7 +11,6 @@
 // k – Last key code pressed (- 38)
 // S - Total score
 // s – Tally of current move used to reward clearing multiple lines
-// I - Offset of next piece
 
 M=e=>(
     h=0,
@@ -25,18 +24,18 @@ M=e=>(
     h
 ),
 b=C=Array(18),
-S=P=I=k=0,
+S=P=k=0,
 D=e=>b.map(v=>{$+=`
 `;for(x=10;x--;)Z.innerText=$+='□■'[v^1023||P?v>>x&1:0]},$=S,P=p),
 (_=e=>D(
     P=P||[...'021213030405061617'.substr(
-        I%6*2,
+        new Date%6*2,
         8,
         s=0,
         B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
     )],
     M`v-~i%2`&&M`v`&(p=k=0),
-    I=setTimeout(_,k-2&&200)
+    setTimeout(_,k-2&&200)
 ))(
 onkeyup=e=>
     P?(k=e.which-38)%2-k||(

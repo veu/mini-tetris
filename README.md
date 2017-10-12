@@ -13,7 +13,6 @@ A JavaScript Tetris clone in 506b.
 
 ## Caveats
 
-* First piece is always a square.
 * Pieces turn differently than in original version.
 
 ## Contributors
