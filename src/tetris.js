@@ -38,10 +38,9 @@ D=e=>b.map(v=>{$+=`
     setTimeout(_,k-2&&200)
 ))(
 onkeydown=e=>
-    P?(k=e.which-38)%2-k||(
-        k
-            ?M`v-i%2*k`
-            :M`P[2]-(P[q=i^1]-P[3])*(i-q)`
-    )
-    ||D():0
+    P
+        ?(k=e.which-38)%2-k
+            ||M`k?v-i%2*k:P[2]-(P[q=i^1]-P[3])*(i-q)`
+            ||D()
+        :0
 )
