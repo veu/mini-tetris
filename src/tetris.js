@@ -31,7 +31,7 @@ D=e=>b.map(v=>{$+=`
     P=P||[...Q.substr(
         I%6*2,
         8,
-        B=[s=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18)
+        B=[s=0,,,,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
     )],
     M`v-~i%2`&&M`v`&(p=k=0),
     I=setTimeout(_,k-2&&200)
