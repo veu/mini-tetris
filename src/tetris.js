@@ -37,7 +37,7 @@ D=e=>b.map(v=>{$+=`
     M`v-~i%2`&&M`v`&(p=k=0),
     setTimeout(_,k-2&&200)
 ))(
-onkeyup=e=>
+onkeydown=e=>
     P?(k=e.which-38)%2-k||(
         k
             ?M`v-i%2*k`
