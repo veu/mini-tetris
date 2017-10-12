@@ -1,6 +1,6 @@
 # Mini Tetris
 
-A JavaScript Tetris clone in 512b.
+A JavaScript Tetris clone in 510b.
 
 [Play the game](https://veu.github.io/mini-tetris/dist/tetris.html).
 
@@ -18,10 +18,11 @@ A JavaScript Tetris clone in 512b.
 
 ## Contributors
 
-* [@aemkei](https://twitter.com/aemkei).
-* [@benjamin_js](https://twitter.com/benjamin_js).
-* [@fusselwurm](https://twitter.com/fusselwurm).
-* [@MaximeEuziere](https://twitter.com/MaximeEuziere).
+* [@aemkei](https://twitter.com/aemkei)
+* [@benjamin_js](https://twitter.com/benjamin_js)
+* [@fusselwurm](https://twitter.com/fusselwurm)
+* [@MaximeEuziere](https://twitter.com/MaximeEuziere)
+* [@subzey](https://twitter.com/subzey)
 
 ## Some tricks used
 

@@ -5,9 +5,9 @@
 
 // B – Current state of playing field, format: [c00<<0|c01<<1|…, c10<<0|c11<<1|…, …]
 // b - Updated state of playing field
+// C - Copy of empty playing field
 // P – Current piece, format: [x0, y0, x1, y1, …]
 // p – Updated piece
-// Q – Spawn coordinates of all pieces
 // k – Last key code pressed (- 38)
 // S - Total score
 // s – Tally of current move used to reward clearing multiple lines
@@ -24,14 +24,16 @@ M=e=>(
     ),b=[...B]),
     h
 ),
-b=[...Q='021213030405061617'].fill(S=P=I=k=0),
+b=C=Array(18),
+S=P=I=k=0,
 D=e=>b.map(v=>{$+=`
-`;for(x=10;x--;)Z.innerText=$+='□■'[v-1023+P&&v>>x&1]},$=S,P=p),
+`;for(x=10;x--;)Z.innerText=$+='□■'[v^1023||P?v>>x&1:0]},$=S,P=p),
 (_=e=>D(
-    P=P||[...Q.substr(
+    P=P||[...'021213030405061617'.substr(
         I%6*2,
         8,
-        B=[s=0,0,0,0,...b].filter(v=>v-1023||!(S+=++s)).slice(-18)
+        s=0,
+        B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
     )],
     M`v-~i%2`&&M`v`&(p=k=0),
     I=setTimeout(_,k-2&&200)
