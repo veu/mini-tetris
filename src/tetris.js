@@ -25,21 +25,21 @@ M=e=>P&&(
     h
 ),
 b=C=Array(9),
-S=P=k=0,
 D=e=>S|=b.map(v=>{S+=`
 `;for(x=10;x--;)Z.innerText=S+='□■'[v^1023+P&&v>>x&1]},P=p),
-(_=e=>D(
+(_=s=>D(
     P=P||[...'021213030405061617'.substr(
         new Date%6*2,
         8,
-        s=0,
         B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
     )],
     M`v-E`&&M`v`&(p=k=0),
-    setTimeout(_,k-2&&200)
+    setTimeout(_,k-2&&200,0)
 ))(
+S=P=k=0
+),
 onkeydown=e=>
     (k=e.which-38)%2-k
     ||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`
     ||D()
-)
+
