@@ -15,10 +15,11 @@
 M=e=>P&&(
     h=0,
     p=P.map((v,i)=>(
+        E=~i%2,
         x=eval(e[0]),
-        i%2
-            ?b[h|=x<0|x>9|b[y]>>x&1|y>17,y]|=1<<x
-            :0,
+        E
+            ?0
+            :b[h|=x<0|x>9|b[y]>>x&1|y>17,y]|=1<<x,
         y=x
     ),b=[...B]),
     h
@@ -34,11 +35,11 @@ D=e=>S|=b.map(v=>{S+=`
         s=0,
         B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
     )],
-    M`v-~i%2`&&M`v`&(p=k=0),
+    M`v-E`&&M`v`&(p=k=0),
     setTimeout(_,k-2&&200)
 ))(
 onkeydown=e=>
     (k=e.which-38)%2-k
-    ||M`k?v-i%2*k:P[2]-(P[q=i^1]-P[3])*(i-q)`
+    ||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`
     ||D()
 )
