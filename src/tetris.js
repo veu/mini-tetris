@@ -25,8 +25,8 @@ M=e=>P&&(
 ),
 b=C=Array(9),
 S=P=k=0,
-D=e=>b.map(v=>{$+=`
-`;for(x=10;x--;)Z.innerText=$+='□■'[v^1023+P&&v>>x&1]},$=S,P=p),
+D=e=>S|=b.map(v=>{S+=`
+`;for(x=10;x--;)Z.innerText=S+='□■'[v^1023+P&&v>>x&1]},P=p),
 (_=e=>D(
     P=P||[...'021213030405061617'.substr(
         new Date%6*2,
