@@ -28,8 +28,8 @@ b=C=Array(9),
 D=e=>S|=b.map(v=>{S+=`
 `;for(x=10;x--;)Z.innerText=S+='□■'[v^1023+P&&v>>x&1]},P=p),
 (_=s=>D(
-    P=P||[...'021213030405061617'.substr(
-        new Date%6*2,
+    P=P||[...'02121303040506161715'.substr(
+        new Date%7*2,
         8,
         B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
     )],
