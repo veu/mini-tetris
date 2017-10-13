@@ -1,5 +1,4 @@
 // _() – Main loop
-// D() – Draw updated field b and set P=p.
 // M(code) – Map P to p using code and merge it with field B into field b.
 //           Return true if piece overlaps with B.
 
@@ -10,7 +9,7 @@
 // p – Updated piece
 // k – Last key code pressed (- 38)
 // S - Total score
-// s – Tally of current move used to reward clearing multiple lines
+// s – Tally of current move used to reward clearing multiple lines, keyboard event
 
 M=e=>P&&(
     h=0,
@@ -25,21 +24,21 @@ M=e=>P&&(
     h
 ),
 b=C=Array(9),
-D=e=>S|=b.map(v=>{S+=`
-`;for(x=10;x--;)Z.innerText=S+='□■'[v^1023+P&&v>>x&1]},P=p),
-(_=s=>D(
-    P=P||[...'02121303040506161715'.substr(
-        new Date%7*2,
-        8,
-        B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
-    )],
-    M`v-E`&&M`v`&(p=k=0),
-    setTimeout(_,k-2&&200,0)
-))(
-S=P=k=0
-),
-onkeydown=e=>
-    (k=e.which-38)%2-k
-    ||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`
-    ||D()
-
+(onkeydown=_=s=>(
+    s
+        ?(k=s.which-38)%2-k||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`
+            ?M`v`
+            :P=p
+        :(
+            P=P||[...'02121303040506161715'.substr(
+                new Date%7*2,
+                8,
+                B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
+            )],
+            M`v-E`&&M`v`&(p=k=0),
+            setTimeout(_,k-2&&200,0),
+            P=p
+        ),
+        S|=b.map(v=>{S+=`
+`;for(x=10;x--;)Z.innerText=S+='□■'[v^1023+P&&v>>x&1]})
+))(S=P=k=0)
