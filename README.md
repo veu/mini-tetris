@@ -38,7 +38,7 @@ A JavaScript Tetris clone in 503b.
   Because that always looks the same apart from the `Array.map` body
   the mapping function `M` is called as a template literal tag function
   with the body as an argument which is then passed to `eval()`.
-* `onkeyup` is shorter than `keydown` though less responsive.
+* `onkeyup` is shorter than `onkeydown` though less responsive.
 * `KeyboardEvent.which` is shorter than `KeyboardEvent.keyCode`.
 * The key code is stored in the global variable `k`and can thus be used outside of the event handler.
 * `setTimeout()` returns a random identifier which can be used for `clearTimeout()` or as random value to select tetrominos.
