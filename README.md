@@ -45,3 +45,7 @@ A JavaScript Tetris clone in 498b.
 * The `<body>` tag doubles as cheap way to execute the code (via `onload`) and element to insert the UI.
 * With `Node.innerText` line breaks can be done with `\n` instead of `<br>` when using `Element.innerHTML`.
 * `A&&B` is used in favor of `if(A)B` but `A?B:0` is used when B is an assignment to avoid wrapping it in parentheses.
+
+## Other projects
+
+If you want to join us or see other golfing projects we’ve made, see [this list](https://gist.github.com/xem/206db44adbdd09bac424).
