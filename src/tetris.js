@@ -12,7 +12,7 @@
 // S - Total score
 // s – Tally of current move used to reward clearing multiple lines
 
-M=e=>(
+M=e=>P&&(
     h=0,
     p=P.map((v,i)=>(
         x=eval(e[0]),
@@ -38,9 +38,7 @@ D=e=>b.map(v=>{$+=`
     setTimeout(_,k-2&&200)
 ))(
 onkeydown=e=>
-    P
-        ?(k=e.which-38)%2-k
-            ||M`k?v-i%2*k:P[2]-(P[q=i^1]-P[3])*(i-q)`
-            ||D()
-        :0
+    (k=e.which-38)%2-k
+    ||M`k?v-i%2*k:P[2]-(P[q=i^1]-P[3])*(i-q)`
+    ||D()
 )
