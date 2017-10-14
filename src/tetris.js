@@ -29,16 +29,16 @@ b=C=Array(9),
         ?(k=s.which-38)%2-k||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`
             ?M`v`
             :P=p
-        :(
+        :G||(
             P=P||[...'02121303040506161715'.substr(
                 new Date%7*2,
                 8,
                 B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
             )],
-            M`v-E`&&M`v`&(p=k=0),
+            M`v-E`&&(G=M`v`,p=k=0),
             setTimeout(_,k-2&&200,0),
             P=p
         ),
-        S|=b.map(v=>{S+=`
-`;for(x=10;x--;)Z.innerText=S+='□■'[v^1023+P&&v>>x&1]})
-))(S=P=k=0)
+    S|=b.map(v=>{S+=`
+`;for(x=10;x--;)Z.innerText=S+='□■'[G||v^1023+P&&v>>x&1]})
+))(S=P=k=G=0)
