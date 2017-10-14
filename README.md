@@ -1,6 +1,6 @@
 # Mini Tetris
 
-A JavaScript Tetris clone in 510b.
+A JavaScript Tetris clone in 512b.
 
 [Play the game](https://veu.github.io/mini-tetris/dist/tetris.html).
 
@@ -25,6 +25,8 @@ A JavaScript Tetris clone in 510b.
 
 ## Some tricks used
 
+Note that some tricks may have been replaced in the most recent version.
+
 * The cells in a row of the playing field are encoded as bits simplifying operations like
   removing rows (pop the row) or checking whether a row is filled (row equals `1023`, ie. `1111111111` in binary).
 * The spread operator `...` is used to cheaply copy the playing field.
@@ -38,6 +40,7 @@ A JavaScript Tetris clone in 510b.
   Because that always looks the same apart from the `Array.map` body
   the mapping function `M` is called as a template literal tag function
   with the body as an argument which is then passed to `eval()`.
+* Operators like `|=` store the original value of the assigned variable before evaluating the right side. This way the variable `S` can be used to keep the score and build the UI at the same time. After the UI has been created, the right side of `S|=…` evaluates to `0` resetting `S` to the score.
 * `onkeyup` is shorter than `onkeydown` though less responsive.
 * `KeyboardEvent.which` is shorter than `KeyboardEvent.keyCode`.
 * The key code is stored in the global variable `k`and can thus be used outside of the event handler.
