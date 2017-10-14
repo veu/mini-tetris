@@ -10,6 +10,7 @@
 // k – Last key code pressed (- 38)
 // S - Total score
 // s – Tally of current move used to reward clearing multiple lines, keyboard event
+// G – Game over state
 
 M=e=>P&&(
     h=0,
