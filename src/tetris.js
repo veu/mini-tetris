@@ -41,5 +41,5 @@ b=C=Array(9),
             P=p
         ),
     S|=b.map(v=>{S+=`
-`;for(x=10;x--;)Z.innerText=S+='□■'[G||v^1023+P&&v>>x&1]})
+`;for(x=10;x--;)Z.innerText=S+='□■'[G^(v^1023+P&&v>>x&1)]})
 ))(S=P=k=G=0)
