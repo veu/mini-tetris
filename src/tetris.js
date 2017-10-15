@@ -37,9 +37,9 @@ b=C=Array(9),
                 B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
             )],
             M`v-E`&&(G=M`v`,p=k=0),
-            setTimeout(_,k-2&&200,0),
+            setTimeout(_,k-2?200:20,0),
             P=p
         ),
     S|=b.map(v=>{S+=`
 `;for(x=10;x--;)Z.innerText=S+='□■'[G^(v^1023+P&&v>>x&1)]})
-))(S=P=k=G=0)<3
+))(S=P=k=G=0)
