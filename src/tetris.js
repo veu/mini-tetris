@@ -36,9 +36,8 @@ b=C=Array(9),
                 8,
                 B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
             )],
-            M`v-E`&&(G=M`v`,p=k=0),
-            setTimeout(_,k-2?200:20,0),
-            P=p
+            P=M`v-E`?k=p&=G=M`v`:p,
+            setTimeout(_,k-2?200:20,0)
         ),
     S|=b.map(v=>{S+=`
 `;for(x=10;x--;)Z.innerText=S+='□■'[G^(v^1023+P&&v>>x&1)]})
