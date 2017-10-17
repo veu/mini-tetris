@@ -27,18 +27,17 @@ M=e=>P&&(
 b=C=Array(9),
 (onkeydown=_=s=>(
     s
-        ?(k=s.which-38)%2-k||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`
-            ?M`v`
-            :P=p
+        ?(k=s.which-38)%2-k||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`&&M`v`
         :G||(
             P=P||[...'02121303040506161715'.substr(
                 new Date%7*2,
                 8,
                 B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
             )],
-            P=M`v-E`?k=p&=G=M`v`:p,
+            M`v-E`?k=p&=G=M`v`:0,
             setTimeout(_,k-2?200:20,0)
         ),
+    P=p,
     S|=b.map(v=>{S+=`
 `;for(x=10;x--;)Z.innerText=S+='□■'[G^(v^1023+P&&v>>x&1)]})
 ))(S=P=k=G=0)
