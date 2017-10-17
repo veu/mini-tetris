@@ -1,6 +1,6 @@
 # Mini Tetris
 
-A JavaScript Tetris clone in 507b.
+A JavaScript Tetris clone in 509b.
 
 [Play the game](https://veu.github.io/mini-tetris/dist/tetris.html).
 

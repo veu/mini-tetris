@@ -32,7 +32,7 @@ b=C=Array(9),
             P=P||[...'02121303040506161715'.substr(
                 new Date%7*2,
                 8,
-                B=[...C,...b].filter(v=>v^1023||!(S+=++s)).slice(-18)
+                B=[...C,...b].filter(v=>v^1023||!(S+=s+=100)).slice(-18)
             )],
             M`v-E`?k=p&=G=M`v`:0,
             setTimeout(_,k-2?200:20,0)
