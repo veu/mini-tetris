@@ -40,5 +40,5 @@ b=C=Array(9),
             setTimeout(_,k-2?200:20,0)
         ),
     S|=b.map(v=>{S+=`
-`;for(x=10;x--;)Z.innerText=S+='□■'[G^(v^1023+P&&v>>x&1)]})
+`;for(x=10;x--;)Z.innerText=S+='◽▩'[G^(v^1023+P&&v>>x&1)]})
 ))(S=P=k=G=0)
