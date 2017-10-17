@@ -18,6 +18,7 @@ M=e=>
         b=[...B],
         // Move the piece.
         p=P.map((v,i)=>(
+            // Set E to -1 if coordinate is y, else -0 [sic]. Used to differentiate x and y.
             E=~i%2,
             // Map current coordinate.
             x=eval(e[0]),
